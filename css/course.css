@@ -1,0 +1,60 @@
+/*响应式控制背景底图*/
+.banner_teacher {
+	background-image: url(../images/course/banner_teacher.jpg);
+
+}
+.banner_course {
+	background-image: url(../images/course/banner_course.jpg);
+}
+.banner_teacher,
+.banner_course {
+	background-size: cover;
+	height: 43vw;
+	box-sizing: border-box;	
+}
+@media (max-width:56em) {
+	.banner_teacher article,
+	.banner_course article {
+		top: 0!important;
+		height: 100%;
+		font-size: 80%;
+	}
+	.banner_course {
+		background-image: none;
+		height: auto;
+	}
+}
+@media (max-width:30em) {
+	.banner_teacher article,
+	.banner_course article {
+		top: 0!important;
+		height: 100%;
+		font-size: 70%;
+	}
+}
+.banner_teacher article,
+.banner_course article {
+	background-color: rgba(65,127,190, 0.6);
+	top: 25%;
+}
+article p {
+	text-indent: 2em;
+	font-size: 0.8em;
+}
+/*教授介绍排版*/
+.team section div {
+	box-shadow: 4px 4px 2px #c9c9c9;
+	height: 700px;
+}
+.team img {
+	width: 70%;
+}
+.team p {
+	font-size: 0.8em;
+}
+
+table th,
+table td {
+	border: 2px solid #fff;
+	word-break: break-all;
+}

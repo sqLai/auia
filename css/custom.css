@@ -1,0 +1,98 @@
+/*半透明遮罩使白色文字清晰*/
+#banner i {
+	top: 0;
+}
+#banner hgroup {
+	z-index: 1000;
+	top: 30%;
+}
+
+/*banner轮播第一屏的form*/
+form {
+	z-index: 100;
+	bottom: 3em;
+}
+form input {
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+/*响应式居中*/
+form div div:first-child {
+	margin-left: 4.16666%;
+}
+form div div:first-child input{
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+form div div:last-child input{
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	color: #FFF;
+	background-color: #FF5A5F;
+	border-color: #FF5A5F;
+	transition: background-color .5s;
+	-webkit-transition: background-color .5s;
+}
+form div div:last-child input:hover{
+	background-color: #ce4836;
+	color: #FFF;
+}
+
+/*使三张宽高比不同的图片能够完成高度相同的自适应*/
+.campschool div {
+	height: 320px;
+}
+.campschool img {	
+	top: 0;
+	left: 50%;
+}
+.campschool div:first-child img,
+.campschool div:last-child img {
+	margin-left: -125px;
+}
+.campschool div img {
+	margin-left: -175px;
+}
+.campschool div h4 {
+	top: 245px;
+}
+.campschool div p {
+	top: 270px;
+}
+
+/*轮播半透明遮罩*/
+#class section {
+	background-color: rgba(255,90,95 , 0.8);
+	right: 0;
+}
+#travel section {
+	background-color: rgba(255,142,64 , 0.8);
+	left: 0;
+}
+
+section {
+	box-sizing: border-box;		
+	top: 0;
+}
+
+/*隐藏轮播里会遮住文字的箭头*/
+
+.content-slide-1 .yiz-rightarrow{
+	display: none;
+}
+.content-slide-2 .yiz-leftarrow{
+	display: none;
+}
+
+
+/*结合padding-top，使移动端文字能接近垂直居中*/
+@media (max-width:40em) {
+	section h4:first-child {
+		margin-top: 10%;
+	}
+}
+
+.step {
+	background-color: #FB0;
+}

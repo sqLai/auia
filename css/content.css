@@ -1,0 +1,44 @@
+.nav .c-red:hover {
+	opacity: 0.6;
+}
+.nav li a:hover {
+	color: #fc5b63;
+}
+table {
+	border-bottom: 2px solid #000;
+}
+th,
+caption {
+	background-color: #468ace;
+	color: #fff;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+}
+td {
+	text-align: center;
+	word-break: break-all;
+}
+tr:not(:first-child) {
+	border-bottom: 1px solid #000;
+}
+th:not(:last-child) {
+	border-right: 1px solid #fff;
+}
+td:not(:last-child) {
+	border-right: 1px solid #000;
+}
+td:nth-child(2) {
+	background-color: #f7fbf9;
+}
+td:nth-child(3) {
+	background-color: #fffbf1;
+}
+td:nth-child(4) {
+	background-color: #f7f5ff;
+}
+td:nth-child(5) {
+	background-color: #ecffff;
+}
+.c-blue span{
+	background-color: #f9d3d4;
+}

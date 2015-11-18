@@ -1,0 +1,31 @@
+.item {
+	width: 100%;
+	padding-top: 1em;
+}
+.item section {
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 3px #ccc;
+}
+.item p {
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+}
+@media (min-width:30em) {
+	.item {
+		width: 50%;
+		padding-top: 2em;
+	}
+}
+@media (min-width:56em) {
+	.item {
+		width: 33.333333%;
+		padding-top: 2em;
+	}	
+}
+@media (min-width:72em) {
+	.item {
+		width: 20%;
+		padding-top: 2em;
+	}	
+}
+

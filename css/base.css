@@ -1,0 +1,51 @@
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+/*移动端nav隐藏状态*/
+#mb-nav {
+	position: fixed;
+	background-color: rgba(35,24,21, 0.8);
+	z-index: 1000
+}
+nav {
+	position: relative;
+	left: -66.66667%;
+	background-color: rgba(45,45,45, 1);
+}
+
+/*pc端nav*/
+header a:hover {
+	color: #FF5A5F;
+}
+header .logo{
+	min-width: 320px;
+}
+
+/*使过长的英文单词能够断开*/
+footer small {
+	word-break: break-all;
+} 
+
+/*利用遮罩模拟半透明的背景底纹*/
+footer i{
+	z-index: 0;
+	background-image: url(../images/common/footerbg.png);
+	background-repeat: repeat-x;
+	background-position:center;
+}
+.zindex1 {
+	z-index: 1;
+}
+/*设置行高，保证div内部的图片不会有轻微空白*/
+.img {
+	line-height: 0;
+	position: relative;
+}
+/*首行缩进*/
+.indent {
+	text-indent: 2em;
+}
+p{
+	word-break: break-all;
+}
